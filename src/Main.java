@@ -94,38 +94,35 @@ public class Main {
 
         System.out.println("\nЗадача_6");
 
-        int sittingPlace = 60;
+        int sittingPlace = 50;
         int standingPlace = 42;
 
         if (standingPlace > 42 || sittingPlace > 60) {
-            System.out.println("Тесные контакты запрещены! Перерасспределитесь по местам или ждите следующий поезд");
-        } else {
-
-            if (sittingPlace < 60) {
+            System.out.println("Тесные контакты запрещены! Перерасспределитесь по местам или ждите следKующий поезд");
+        } else if (sittingPlace < 60) {
                 System.out.println("В вагоне есть сидячие места");
-            }
-            if (standingPlace < 42) {
+            } else if (standingPlace < 42) {
                 System.out.println("В вагоне есть стоячие места");
-            } else {
+        } else {
                 System.out.println("В вагоне мест нет, ждите следующий поезд");
             }
         }
-    }
+
     public static void task7() {
 
         System.out.println("\nЗадача_7");
-    int one = 1;
-    int two = 1;
-    int three = 3;
+    int one = 7;
+    int two = 7;
+    int three = 2;
 
     if (one >= two && one > three) {
         System.out.println(one + " самое большое число");
-    } if (two > one && two >= three ) {
+    } else if (two > one && two >= three ) {
         System.out.println(two + " самое большое число");
-    } if (three >= one && three > two) {
+    } else if (three >= one && three > two) {
             System.out.println(three + " самое большое число");
         } else {
                 System.out.println("Все числа одинаковы");}
         }
-    }
+}
 
